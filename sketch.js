@@ -456,7 +456,7 @@ line.bounceOff(golfwall2)
 uplayer.visible=false
 
 golfButton.hide()
-soccer.show()
+soccer.hide()
 
 if(gameState==="home"){
 background(23,230,253)
