@@ -355,10 +355,10 @@ bowlingPlayer.addImage("bowlingmainplayer",bbImage)
 bowlingPlayer.scale=.06
 bowlingPlayer.visible=false
 
-bowlbounce=createSprite(width/.85-width/2,height/2,10,1500)
+bowlbounce=createSprite(width/.85-width/2,height/2,10,1900)
 bowlbounce.shapeColor="green"
 bowlbounce.visible=false
-bowlbounce2=createSprite(width/1.30-width/2,height/2,10,1500)
+bowlbounce2=createSprite(width/1.30-width/2,height/2,10,1900)
 bowlbounce2.shapeColor="green"
 bowlbounce2.visible=false
 
@@ -944,7 +944,7 @@ getback.x=width/.1-width/2
 //golf is done. now its the time for running;
 
 if(gameState==="bowling"){
-  background("white")
+  background(184,246,15)
   bowlingButton.hide()
   golfButton.hide()
   soccer.hide()
