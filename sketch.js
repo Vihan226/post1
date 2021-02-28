@@ -459,7 +459,7 @@ golfButton.hide()
 soccer.show()
 
 if(gameState==="home"){
-background("white")
+background(23,230,253)
 player.visible=false
 soccerBall.visible=false
 golfball.visible=false
