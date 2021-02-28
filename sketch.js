@@ -67,7 +67,7 @@ got = loadSound("got.mp4")
 } 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  
+
  soccer= createButton("Play Soccer!")
  soccer.size(200,100)
  ballr= createButton("Reset Ball")
@@ -76,7 +76,7 @@ ballr.size(200,100)
  vihan.size(200,100)
   soccer.position(width/1.5-width/2,height/2-160)
 
-  ballr.position(width/.75-width/2,height/2-340)
+  ballr.position(width/.78-width/2,height/2-340)
 
   vihan.position(width/.8-width/2,height/2-160)
  
@@ -399,7 +399,8 @@ wonImpossible=""
 }
 
 function draw() {
-  background("white");
+  //100,200,200
+  background(23,230,253);
 textSize(50)
 fill("black")
   text(": "+dcount,width/.75-width/2,height/2-392)
