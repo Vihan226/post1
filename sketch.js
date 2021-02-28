@@ -68,7 +68,7 @@ got = loadSound("got.mp4")
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
- soccer= createButton("Play Soccer!")
+ soccer= createButton("Play The Head Soccer!")
  soccer.size(200,100)
  ballr= createButton("Reset Ball")
 ballr.size(200,100)
