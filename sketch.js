@@ -68,20 +68,21 @@ got = loadSound("got.mp4")
 function setup() {
   createCanvas(windowWidth, windowHeight);
   
- soccer= createButton("Soccer")
+ soccer= createButton("Play Soccer!")
+ soccer.size(200,100)
  ballr= createButton("Reset Ball")
-
+ballr.size(200,100)
  vihan= createInput("Username: ")
-
+ vihan.size(200,100)
   soccer.position(width/1.5-width/2,height/2-160)
 
-  ballr.position(width/.72-width/2,height/2-360)
+  ballr.position(width/.75-width/2,height/2-340)
 
   vihan.position(width/.8-width/2,height/2-160)
  
   home= createButton("Come Back To Home")
   home.position(width/1.8-width/2,height/2-400)
-
+  home.size(200,100)
 
   player=createSprite(width/1.2-width/2,height/2-340)
   player.addImage("opponent player",red)
@@ -371,9 +372,9 @@ bowlbounce2.visible=false
   golfButton.position(width/1.3-width/2,height/2-160)
 
   
-  bowlingButton= createButton("Runner")
+  bowlingButton= createButton("Play The Runner!")
   bowlingButton.position(width/1.1-width/2,height/2-160)
-
+  bowlingButton.size(200,100)
   player.velocityX=-15.3
 
   //soccerBall.velocityY=-3;
@@ -468,10 +469,10 @@ rect.visible=false
 bowlbounce.visible=false
 bowlbounce2.visible=false
 
-textSize(10)
+/*textSize(10)
 fill("red")
 text("Click the Button on top to watch an AD to have 5 diamonds Again! Watch it when you have less than 5 Diamonds"+ad,width/1.95-width/2,height/2-450)
-//bowling
+//bowling*/
 
 h1.visible=false
 h2.visible=false
