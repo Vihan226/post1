@@ -1219,20 +1219,33 @@ bowlingPlayer.bounce(h4)
 bowlingPlayer.bounce(h5)
 bowlingPlayer.bounce(h6)
 bowlingPlayer.bounce(h7)*/
+
+else{
+  bowlingPlayer.scale=.06
+}
+///asmdoadklamsd
 if(e6.isTouching(bowlingPlayer)){
   dcount=dcount+2
 got.play()
+
+bowlingPlayer.scale=.25
 }
 
-
-if(e7.isTouching(bowlingPlayer)){
-  dcount=dcount-3
-
-  song.play()
-}
 else{
   song.pause()
 }
+if(e7.isTouching(bowlingPlayer)){
+  dcount=dcount-3
+background("red")
+  song.play()
+}
+
+
+else{
+  background(184,246,15)
+}
+
+
 if(h1.velocityY=7){
   reset=1
 }
