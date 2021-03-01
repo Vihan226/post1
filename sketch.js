@@ -421,7 +421,7 @@ e6.lifetime=900
 //hit infinite
 // it was 30 frameCount and from 30 is 10 frameCount
 if(frameCount %30 === 0){
-e7=createSprite(width/1-width/2,height/2-500);
+e7=createSprite(width/1-width/2,height/2-700);
 e7.addImage("door",hitImage)
 e7.scale=.7
 e7.visible=false
