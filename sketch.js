@@ -45,6 +45,11 @@ var vihan;
 var na;
 var blue, red,ballr;
 var song, got;
+var reload;
+var rules;
+var phone;
+// all of the skins
+var skin1;
 function preload(){
 fieldImage=loadImage("usefield.png")
 dImage= loadImage("used.png")
@@ -74,12 +79,25 @@ function setup() {
 ballr.size(200,100)
  vihan= createInput("Username: ")
  vihan.size(200,100)
+
+ rules = createButton (" How To Play The Game!")
+ rules.size(200,100)
+
   soccer.position(width/1.5-width/2,height/2-160)
 
   ballr.position(width/.78-width/2,height/2-340)
 
   vihan.position(width/.8-width/2,height/2-160)
- 
+
+
+
+
+// how to play the game rules are below and the size
+  rules.position(width/1.7-width/2,height/2+340)
+
+
+
+
   home= createButton("Come Back To Home")
   home.position(width/1.8-width/2,height/2-400)
   home.size(200,100)
@@ -344,6 +362,7 @@ e5.addImage("e5",hitImage)
 e5.scale=.6
 e5.visible=false
 
+// reload the game
 
 
 
@@ -373,12 +392,23 @@ bowlbounce2.visible=false
 
   
   bowlingButton= createButton("Play The Runner!")
-  bowlingButton.position(width/1.1-width/2,height/2-160)
+  bowlingButton.position(width/1.2-width/2,height/2-160)
   bowlingButton.size(200,100)
   player.velocityX=-15.3
 
   //soccerBall.velocityY=-3;
 //soccerBall.velocityX=15
+
+// adding skins
+
+phone=createButton(" Chose A Skin For The Game")
+phone.position(width/.71-width/2,height/2-230)
+phone.size(100,400)
+
+
+skin1=createButton("skin 1 cost 1 diamond")
+skin1.position(width/.9-width/2,height/2-230)
+skin1.size(100,400)
 
 line.velocityX=-15
 
@@ -399,6 +429,9 @@ wonImpossible=""
 }
 
 function draw() {
+
+  rules.hide()
+  skin1.hide()
   //100,200,200
   background(23,230,253);
 textSize(50)
@@ -411,6 +444,7 @@ fill("black")
 if (frameCount %70 === 0) {
   e6=createSprite(width/1-width/2,height/2-500);
 e6.addImage("door",coin)
+//e6.scale=.18
 e6.scale=.18
 e6.visible=false
 e6.velocityY=17
@@ -549,6 +583,23 @@ dcount=dcount-1
 
 vihan.hide()
   })
+// get to the skin window
+ phone.mousePressed(()=>{
+
+    gameState="skins"
+
+    vihan.hide()
+   
+      })
+      //finish- added skin1 that locates to gamestate of bowling but does not change the skin.
+      skin1.mousePressed(()=>{
+        gameState="bowling"
+dcount=dcount-1
+
+vihan.hide()
+
+      })
+
   ballr.mousePressed(()=>{
 
     soccerBall.velocityY=-3;
@@ -566,7 +617,7 @@ player.y=height/2-340
 gameState="home"
 //bowling win=!!!
 vihan.show()
-
+phone.show()
 soccerBall.velocityY=0;
 soccerBall.velocityX=0
 
@@ -1279,6 +1330,19 @@ if(keep>0){
 }*/
   text(": "+dcount,width/.75-width/2,height/2-392)
 }
+
+if(gameState==="skins"){
+  background("green")
+  bowlingButton.hide()
+  phone.hide()
+ // home.hide()
+ skin1.show()
+  text(": "+dcount,width/.75-width/2,height/2-392)
+
+
+}
+
+
  drawSprites();
     
 }
