@@ -1340,12 +1340,12 @@ if(gameState==="policy"){
   text(": "+dcount,width/.75-width/2,height/2-392)
   fill("Red")
   textSize(50)
-  text("This is Made By Vihan Seth for Ultimate Dictionary", width/1.3-width/2, height/2-200)
-
+  text("This Game is made out of Web Viewer", width/1.5-width/2, height/2-200)
+  text("By Vihan Seth for Ultimate Dictionary", width/1.5-width/2, height/2-150)
   fill("blue")
   textSize(20)
-  text("This game is made for any ages! It has sound affects and animations", width/1.3-width/2, height/2-150)
-  text("when losing diamonds or gaining them!", width/1.3-width/2, height/2-120)
+  text("This game is made for any ages! It has sound affects and animations", width/1.5-width/2, height/2-120)
+  text("when losing diamonds or gaining them!", width/1.5-width/2, height/2-90)
 
 
 }
