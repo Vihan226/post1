@@ -401,7 +401,7 @@ bowlbounce2.visible=false
 
 // adding skins
 
-phone=createButton(" Chose A Skin For The Game")
+phone=createButton(" Privacy Policy")
 phone.position(width/.71-width/2,height/2-230)
 phone.size(100,400)
 
@@ -586,7 +586,7 @@ vihan.hide()
 // get to the skin window
  phone.mousePressed(()=>{
 
-    gameState="skins"
+    gameState="policy"
 
     vihan.hide()
    
@@ -1331,13 +1331,21 @@ if(keep>0){
   text(": "+dcount,width/.75-width/2,height/2-392)
 }
 
-if(gameState==="skins"){
+if(gameState==="policy"){
   background("green")
   bowlingButton.hide()
   phone.hide()
  // home.hide()
- skin1.show()
+ skin1.hide()
   text(": "+dcount,width/.75-width/2,height/2-392)
+  fill("Red")
+  textSize(50)
+  text("This is Made By Vihan Seth for Ultimate Dictionary", width/1.3-width/2, height/2-200)
+
+  fill("blue")
+  textSize(20)
+  text("This game is made for any ages! It has sound affects and animations", width/1.3-width/2, height/2-150)
+  text("when losing diamonds or gaining them!", width/1.3-width/2, height/2-120)
 
 
 }
